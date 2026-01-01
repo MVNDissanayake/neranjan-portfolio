@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fullText = "<Welcome_To_Nerajan_Portfolio/>";
+  const fullText = "welcome to Neranjan Creative Arts";
 
   useEffect(() => {
     let index = 0;

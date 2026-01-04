@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import WebCoverVideo from "../../Assets/WebCoverVideo.mp4";
+import VideoComponent from "../VideoComponent";
 
 
 export const Home = () => {
@@ -8,23 +9,10 @@ export const Home = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source src={WebCoverVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+    <VideoComponent />
 
       <RevealOnScroll>
-        <div className="relative text-center z-10 px-4">
+        <div className="relative text-center z-30 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Hi I'm Neranjan Dissanayake
           </h1>

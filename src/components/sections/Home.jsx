@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import WebCoverVideo from "../../Assets/WebCoverVideo.mp4";
 import VideoComponent from "../VideoComponent";
-
+import { FaInstagram, FaYoutube, FaFacebook, FaTiktok, Fadis } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -40,6 +40,46 @@ export const Home = () => {
             </a>
           </div>
         </div>
+
+        {/* Social Media Links */}
+<div className="flex justify-center gap-6 mt-8">
+  <a
+    href="https://instagram.com/YOUR_USERNAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white/80 hover:text-pink-500 transition transform hover:scale-110"
+  >
+    <FaInstagram size={28} />
+  </a>
+
+  <a
+    href="https://youtube.com/@YOUR_CHANNEL"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white/80 hover:text-red-500 transition transform hover:scale-110"
+  >
+    <FaYoutube size={28} />
+  </a>
+
+  <a
+    href="https://facebook.com/YOUR_PAGE"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white/80 hover:text-blue-500 transition transform hover:scale-110"
+  >
+    <FaFacebook size={28} />
+  </a>
+
+  <a
+    href="https://tiktok.com/@YOUR_USERNAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white/80 hover:text-gray-200 transition transform hover:scale-110"
+  >
+    <FaTiktok size={26} />
+  </a>
+</div>
+
       </RevealOnScroll>
     </section>
   );

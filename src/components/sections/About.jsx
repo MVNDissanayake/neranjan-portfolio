@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { FaInstagram, FaYoutube, FaFacebook, FaTiktok, FaSpotify } from "react-icons/fa";
 
 export const About = () => {
 
@@ -17,10 +18,89 @@ const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
         </h2>
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-                From live performances to studio creations, 
-                my music is crafted to inspire, feel, 
-                and remember.
+                About Me
+              
+            My name is Neranjan Dissanayake, and I am a professional Musician and Singer 
+            with over 10 years of experience in the music industry. Over the years, I have 
+            built a strong reputation through live performances, original compositions, and 
+            consistent dedication to my craft.
+            <br/>
+            <br />
+
+            I was born in Kandy, Sri Lanka, and received my education at Vidyartha College, 
+            Kandy, where my passion for music and performance was nurtured and developed 
+            from an early stage.
+            <br />
+
+            <br />
+            I specialize in live performing and creating original music, 
+            delivering energetic and emotionally engaging performances that connect 
+            with diverse audiences. I have had the privilege of performing on several 
+            well-known Sri Lankan television and radio platforms, including Sri Lanka 
+            Broadcasting Corporation, ITN, Swarnawahini, Supreme TV, and numerous FM 
+            channels across the country.
+            <br />
+            <br />
+            In addition to solo work, I actively perform with my own music band, 
+            K1 Live, providing professional live music experiences for events, shows, 
+            and special programs.
+            <br />
+            <br />
+            Creativity and discipline are at the core of my work ethic. 
+            I believe that true artistry comes from originality 
+            combined with professionalism, reliability, and respect for every project. 
+            I am always committed to delivering high-quality performances that meet client 
+            expectations and create memorable experiences.
+            
+
             </p>
+            
+                    {/* Social Media Links */}
+        <div className="flex justify-center gap-6 mt-8">
+          
+          <a
+            href="https://www.instagram.com/neranjan.nd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20"
+
+          >
+          <FaInstagram size={28} />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@Neranjan.Dissanayke"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20"
+
+          >
+          <FaYoutube size={28} />
+          </a>
+
+          <a
+            href="https://facebook.com/YOUR_PAGE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20"
+
+          >
+          <FaFacebook size={28} />
+          </a>
+
+          <a
+            href="https://open.spotify.com/artist/7LiCJKt4meHCkHvdLd9PGS?si=SSxwJv74Rjuuwk2Zt_TtEw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20"
+
+          >
+          <FaSpotify size={26} />
+          </a>
+          
+        </div> 
+
+            {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
@@ -95,7 +175,8 @@ const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
                 </div>
               </div>
             </div>
-          </div>
+             */}
+          </div> 
         </div>
       </RevealOnScroll>    
     </section>

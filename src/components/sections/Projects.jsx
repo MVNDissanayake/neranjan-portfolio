@@ -1,10 +1,12 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import VideoComponent2 from "../VideoComponent2";
 export const Projects = () => {
     
     return <section 
         id="projects"
-        className="min-h-screen flex items-center justify-center py-20"
+        className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden"
         >
+          <VideoComponent2/>
           <RevealOnScroll>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">

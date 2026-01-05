@@ -17,7 +17,7 @@ const VideoComponent2 = ({ src, overlay = "bg-black/30" }) => {
         </video>
         
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none"></div>
+         <div className="absolute inset-5 bg-black/5 z-10 pointer-events-none"></div>
 
         <div
         className={`absolute inset-0 ${overlay} z-10 pointer-events-none`}

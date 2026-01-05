@@ -8,6 +8,8 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/contact";
 import "./index.css";
+import MusicPlayer from "./components/MusicPlayer";
+import YouTubeGallery from "./components/YouTubeGallery";
  
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,7 +28,9 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <YouTubeGallery />
         <Contact />
+        <MusicPlayer />
 
       </div>
     </>

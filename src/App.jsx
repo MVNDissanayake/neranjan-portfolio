@@ -9,7 +9,9 @@ import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/contact";
 import "./index.css";
 import MusicPlayer from "./components/MusicPlayer";
-import YouTubeGallery from "./components/YouTubeGallery";
+import VideoComponent2 from "./components/VideoComponent2";
+import Footer from "./components/footer";
+import PhotoGallery from "./components/photoGallery";
  
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <>
+    
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <div
         className={`min-h-screen transition-opacity duration-700 ${
@@ -27,10 +30,16 @@ function App() {
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
+        <VideoComponent2 className="mx-auto" />
         <Projects />
-        <YouTubeGallery />
+        <div>
+          <h1 className="text-3xl font-bold text-center my-8">My Portfolio Gallery</h1>
+          <PhotoGallery />
+        </div>
         <Contact />
         <MusicPlayer />
+        <Footer />
+        
 
       </div>
     </>

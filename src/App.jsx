@@ -25,22 +25,17 @@ function App() {
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
-      >
+        >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
         <VideoComponent2 className="mx-auto" />
         <Projects />
-        <div>
-          <h1 className="text-3xl font-bold text-center my-8">My Portfolio Gallery</h1>
-          <PhotoGallery />
-        </div>
+        <PhotoGallery />
         <Contact />
         <MusicPlayer />
         <Footer />
-        
-
       </div>
     </>
     

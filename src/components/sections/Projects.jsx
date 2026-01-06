@@ -132,7 +132,7 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">ND Live Music Store</h3>
+              <h3 className="text-xl font-bold mb-2">ND Music Store & showroom</h3>
               <p className="text-gray-400 mb-4">
                 A music equipment store providing instruments, 
                 accessories, sound systems, and professional 
